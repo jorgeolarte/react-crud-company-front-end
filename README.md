@@ -1,2 +1,3 @@
 # lite-thinking
-Tech interview by Lite Thinking
+
+Tech interview by Lite Thinking 🤓
