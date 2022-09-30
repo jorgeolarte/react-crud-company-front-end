@@ -6,7 +6,7 @@ export default function MyInput({ label, ...props }) {
   const [field, meta] = useField(props);
   return (
     <>
-      <input className='text-input' {...field} {...props} />
+      <input className='text-gray-800 p-2' {...field} {...props} />
       {meta.touched && meta.error ? (
         <div className='error'>{meta.error}</div>
       ) : null}
