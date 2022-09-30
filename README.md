@@ -1,3 +1,1 @@
-# lite-thinking
-
-Tech interview by Lite Thinking 🤓
+# React crud company front-end
