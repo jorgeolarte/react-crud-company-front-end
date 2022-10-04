@@ -5,11 +5,15 @@ export default function MyInput({ label, ...props }) {
   // which we can spread on <input> and alse replace ErrorMessage entirely.
   const [field, meta] = useField(props);
   return (
-    <>
-      <input className='text-gray-800 p-2' {...field} {...props} />
+    <div className='flex flex-col'>
+      <input
+        className='text-[#3c3c3b] rounded-md py-1 px-2'
+        {...field}
+        {...props}
+      />
       {meta.touched && meta.error ? (
-        <div className='error'>{meta.error}</div>
+        <div className='text-sm'>* {meta.error}</div>
       ) : null}
-    </>
+    </div>
   );
 }
